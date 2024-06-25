@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', 'sans-serif';
+    font-family: "Lexend", sans-serif;
+}
+
+/* Estilos globais */
+body {
+        background-color: #F5F4F9;
+}
+
+
+/* Estilos específicos para a aba "Avaliações" */
+.reviews-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+}
+
+.review img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.review-content {
+    padding: 10px;
+}
+
+.review h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.review p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.review p strong {
+    color: #333;
+}
+.platform-selector {
+    text-align: start;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+.platform-selector h1 {
+ margin-bottom: 20px;
+}
+
+.games-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 50px;
+}
+
+.game {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.game:hover {
+    transform: translateY(-5px);
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.game-info {
+    padding: 10px;
+}
+
+.game h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.game p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.game p strong {
+    color: #333;
+}
+
+#header {
+    background-color: #000000;
+    position: fixed;
+    height: 150px;
+    position: fixed;
+    width: 100%;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    z-index: 1000;
+    margin-bottom: 100px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 0.2rem;
+    margin-left: 2rem;
+}
+
+.menu a {
+    display: block;
+    padding: 0.4;
+    margin-right: 4vw;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #efefefad;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.menu a:hover {
+    color: white;
+    transition: 1s;
+}
+
+.menu a.active {
+    color: #fff;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 100px;
+}
+
+#login-mobile {
+    display: none;
+}
+
+.logo img {
+    width: 154px;
+    max-width: 100%;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+#login button {
+    border: 1px solid white;
+    padding: 9px 25px;
+}
+
+#Sign button {
+    background-color: #3B44F6;
+    padding: 9px 25px;
+}
+
+.login-button button {
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-right: 40px;
+}
+
+.carrosel {
+    background-color: #010813;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#login a:hover {
+    color: #3B44F6;
+    transition: 1s;
+}
+
+#Sign button:hover {
+    background-color: transparent;
+    transition: 1s;
+    border: 1px solid white;
+}
+
+#button_mob {
+    display: none;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+
+input {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.btns {
+    display: flex;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background: transparent;
+    color: #3B44F6;
+
+}
+
+#two {
+    margin-left: 30px;
+}
+
+.icon {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.bt-redes {
+    background-color: transparent;
+    border: none;
+    transition: 1s;
+}
+
+.fundo h1 {
+    text-align: start;
+    margin-left: 150px;
+    font-weight: bolder;
+    color: #F5F4F9;
+    padding-top: 50px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    background-color: #000216;
+    margin-top: 250px;
+    height: 500px;
+}
+
+.caixa-rodape {
+    margin-top: 60px;
+    width: 320px;
+    min-height: 150px;
+    margin-left: 100px;
+}
+
+.logo-rodape {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.caixa-rodape h2 {
+    color: white;
+}
+
+.caixa-rodape ul {
+    padding-left: 0px;
+}
+
+.caixa-rodape ul li {
+    margin-top: 30px;
+    margin-right: 50px;
+    list-style: none !important;
+}
+
+.caixa-rodape ul li a {
+    font-size: 18px;
+    color: #A0A0A0;
+    text-decoration: none !important;
+}
+.caixa-rodape ul li a:hover {
+    color: white;
+}
+
+button i {
+    font-size: 3rem;
+    color: #A0A0A0;
+    border: none;
+    cursor: pointer;
+    background: none;
+    margin-left: 10px;
+    transition: 1s;
+}
+button i:hover{
+ transform: scale(1.1);
+}
+
